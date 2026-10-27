@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>REWEAR | Vendre</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================
+     CAPÇALERA
+========================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        REWEAR
+    </a>
+
+    <nav class="menu">
+
+        <a href="index.html">
+            Inici
+        </a>
+
+        <a href="dona.html">
+            Dona
+        </a>
+
+        <a href="home.html">
+            Home
+        </a>
+
+        <a href="accessoris.html">
+            Accessoris
+        </a>
+
+        <a href="sabates.html">
+            Sabates
+        </a>
+
+    </nav>
+
+    <div class="nav-actions">
+
+        <button class="search-button">
+            ⌕
+        </button>
+
+        <button class="favorite-button">
+            ♡
+        </button>
+
+        <a href="vendre.html" class="sell-button">
+            Vendre
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     PÀGINA VENDRE
+========================= -->
+
+<main>
+
+    <section class="sell-section">
+
+        <div class="sell-intro">
+
+            <p class="small-title">
+                REWEAR · VEN LA TEVA ROBA
+            </p>
+
+            <h1>
+                Dona una nova vida
+                a les teves peces.
+            </h1>
+
+            <p class="sell-text">
+                Publica una peça que ja no utilitzes i
+                troba una persona que li pugui donar
+                una nova oportunitat.
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+             FORMULARI
+        ========================= -->
+
+        <form class="sell-form" id="sell-form">
+
+
+            <!-- FOTO -->
+
+            <div class="sell-photo-upload">
+
+                <label for="product-photo" class="photo-label">
+
+                    <span class="photo-icon">
+                        ＋
+                    </span>
+
+                    <strong>
+                        Afegeix una foto
+                    </strong>
+
+                    <span>
+                        Fes una foto clara de la peça
+                    </span>
+
+                </label>
+
+                <input
+                    type="file"
+                    id="product-photo"
+                    accept="image/*"
+                    hidden
+                >
+
+            </div>
+
+
+            <!-- INFORMACIÓ BÀSICA -->
+
+            <div class="form-grid">
+
+                <div class="form-field">
+
+                    <label for="product-name">
+                        NOM DE LA PEÇA
+                    </label>
+
+                    <input
+                        type="text"
+                        id="product-name"
+                        placeholder="Ex. Vestit negre"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="brand">
+                        MARCA
+                    </label>
+
+                    <input
+                        type="text"
+                        id="brand"
+                        placeholder="Ex. Zara"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- CATEGORIA I TALLA -->
+
+            <div class="form-grid">
+
+                <div class="form-field">
+
+                    <label for="category">
+                        CATEGORIA
+                    </label>
+
+                    <select id="category" required>
+
+                        <option value="">
+                            Selecciona una categoria
+                        </option>
+
+                        <option value="dona">
+                            Dona
+                        </option>
+
+                        <option value="home">
+                            Home
+                        </option>
+
+                        <option value="accessoris">
+                            Accessoris
+                        </option>
+
+                        <option value="sabates">
+                            Sabates
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="size">
+                        TALLA
+                    </label>
+
+                    <select id="size" required>
+
+                        <option value="">
+                            Selecciona una talla
+                        </option>
+
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="unica">Única</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- ESTAT I PREU -->
+
+            <div class="form-grid">
+
+                <div class="form-field">
+
+                    <label for="condition">
+                        ESTAT
+                    </label>
+
+                    <select id="condition" required>
+
+                        <option value="">
+                            Selecciona l'estat
+                        </option>
+
+                        <option value="com-nou">
+                            Com nou
+                        </option>
+
+                        <option value="molt-bon-estat">
+                            Molt bon estat
+                        </option>
+
+                        <option value="bon-estat">
+                            Bon estat
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="price">
+                        PREU (€)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="price"
+                        placeholder="Ex. 25"
+                        min="0"
+                        step="0.01"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- DESCRIPCIÓ -->
+
+            <div class="form-field form-field-full">
+
+                <label for="description">
+                    DESCRIPCIÓ
+                </label>
+
+                <textarea
+                    id="description"
+                    rows="6"
+                    placeholder="Explica una mica més sobre la peça..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <!-- BOTÓ -->
+
+            <button
+                type="submit"
+                class="button button-dark sell-submit"
+            >
+                Publicar peça
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     PEU DE PÀGINA
+========================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        REWEAR
+    </div>
+
+    <p>
+        © 2026 REWEAR · Marketplace de segona mà
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+```
+
+</body>
+
+</html>

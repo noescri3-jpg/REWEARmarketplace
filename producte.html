@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>REWEAR | Producte</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CAPÇALERA
+    ========================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            REWEAR
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">Inici</a>
+            <a href="dona.html">Dona</a>
+            <a href="home.html">Home</a>
+            <a href="accessoris.html">Accessoris</a>
+            <a href="sabates.html">Sabates</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="search-button">
+                ⌕
+            </button>
+
+            <button class="favorite-button">
+                ♡
+            </button>
+
+            <a href="vendre.html" class="sell-button">
+                Vendre
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         PRODUCTE
+    ========================= -->
+
+    <main>
+
+        <section class="product-detail">
+
+            <!-- IMATGE DEL PRODUCTE -->
+
+            <div class="product-detail-image">
+
+                <div class="product-main-image" id="product-image">
+
+                    <span class="condition" id="product-condition">
+                        Molt bon estat
+                    </span>
+
+                    <button class="product-detail-heart" type="button">
+                        ♡
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFORMACIÓ DEL PRODUCTE -->
+
+            <div class="product-detail-info">
+
+                <p class="product-detail-brand" id="product-brand">
+                    ZARA
+                </p>
+
+                <h1 id="product-name">
+                    Vestit negre
+                </h1>
+
+                <p class="product-detail-price" id="product-price">
+                    15 €
+                </p>
+
+
+                <div class="product-details-line">
+
+                    <span>
+                        Talla
+                    </span>
+
+                    <strong id="product-size">
+                        S
+                    </strong>
+
+                </div>
+
+
+                <div class="product-details-line">
+
+                    <span>
+                        Estat
+                    </span>
+
+                    <strong id="product-status">
+                        Molt bon estat
+                    </strong>
+
+                </div>
+
+
+                <!-- DESCRIPCIÓ -->
+
+                <div class="product-description">
+
+                    <h3>
+                        Descripció
+                    </h3>
+
+                    <p id="product-description">
+                        Vestit negre de Zara en molt bon estat.
+                        Una peça versàtil i fàcil de combinar,
+                        perfecta per a diferents ocasions.
+                    </p>
+
+                </div>
+
+
+                <!-- COMPRA -->
+
+                <div class="purchase-box">
+
+                    <p>
+                        Compra segura amb REWEAR
+                    </p>
+
+                    <span>
+                        Compra i ven de manera senzilla i segura
+                        a través de la nostra plataforma.
+                    </span>
+
+                    <button class="buy-button" type="button">
+                        Comprar ara
+                    </button>
+
+                    <button class="favorite-large-button" type="button">
+                        ♡ Afegir als favorits
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PEU DE PÀGINA
+    ========================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            REWEAR
+        </div>
+
+        <p>
+            © 2026 REWEAR · Marketplace de segona mà
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+    <!-- =========================
+         INFORMACIÓ DELS PRODUCTES
+    ========================= -->
+
+    <script>
+
+        const productes = {
+
+            /* =====================
+               DONA
+            ===================== */
+
+            dona1: {
+                brand: "ZARA",
+                name: "Vestit negre",
+                price: "15 €",
+                size: "S",
+                status: "Molt bon estat",
+                image: "imatges/vestit-negre-zara.jpg",
+                description: "Vestit negre de Zara en molt bon estat. Una peça versàtil i fàcil de combinar, perfecta per a diferents ocasions."
+            },
+
+            dona2: {
+                brand: "NIKE",
+                name: "Dessuadora esportiva",
+                price: "35 €",
+                size: "M",
+                status: "Com nou",
+                image: "imatges/dessuadora-nike.jpg",
+                description: "Dessuadora Nike esportiva en molt bon estat. Còmoda, pràctica i perfecta per al dia a dia."
+            },
+
+            dona3: {
+                brand: "LEVI'S",
+                name: "Jeans blaus",
+                price: "30 €",
+                size: "38",
+                status: "Molt bon estat",
+                image: "imatges/jeans-levis.jpg",
+                description: "Jeans Levi's de color blau en molt bon estat. Un bàsic que combina fàcilment amb qualsevol estil."
+            },
+
+            dona4: {
+                brand: "ADIDAS",
+                name: "Jaqueta esportiva",
+                price: "40 €",
+                size: "M",
+                status: "Bon estat",
+                image: "imatges/jaqueta-adidas.jpg",
+                description: "Jaqueta Adidas còmoda i esportiva, ideal per a un look casual."
+            },
+
+            dona5: {
+                brand: "MANGO",
+                name: "Abric elegant",
+                price: "55 €",
+                size: "M",
+                status: "Molt bon estat",
+                image: "imatges/abric-mango.jpg",
+                description: "Abric de Mango elegant i en molt bon estat. Una peça ideal per als dies més freds."
+            },
+
+            dona6: {
+                brand: "H&M",
+                name: "Jersei de punt",
+                price: "25 €",
+                size: "S",
+                status: "Com nou",
+                image: "imatges/jersei-hm.jpg",
+                description: "Jersei de punt d'H&M suau i còmode, perfecte per al dia a dia."
+            },
+
+
+            /* =====================
+               HOME
+            ===================== */
+
+            home1: {
+                brand: "RALPH LAUREN",
+                name: "Polo blau marí",
+                price: "25 €",
+                size: "M",
+                status: "Com nou",
+                image: "imatges/polo-ralph-lauren.jpg",
+                description: "Polo blau marí de Ralph Lauren en molt bon estat. Una peça clàssica, elegant i fàcil de combinar."
+            },
+
+            home2: {
+                brand: "NIKE",
+                name: "Pantalons Nike",
+                price: "25 €",
+                size: "M",
+                status: "Molt bon estat",
+                image: "imatges/pantalons-nike.jpg",
+                description: "Pantalons Nike còmodes i esportius en molt bon estat. Perfectes per al dia a dia i per crear looks casuals."
+            },
+
+            home3: {
+                brand: "LEVI'S",
+                name: "Jaqueta Levi's",
+                price: "30 €",
+                size: "M",
+                status: "Molt bon estat",
+                image: "imatges/jaqueta-levis.jpg",
+                description: "Jaqueta Levi's en molt bon estat. Una peça clàssica i versàtil que combina fàcilment amb diferents estils."
+            },
+
+            home4: {
+                brand: "ADIDAS",
+                name: "Dessuadora Adidas",
+                price: "30 €",
+                size: "M",
+                status: "Com nou",
+                image: "imatges/dessuadora-adidas.jpg",
+                description: "Dessuadora Adidas còmoda i esportiva en molt bon estat. Ideal per a un estil casual i còmode."
+            },
+
+            home5: {
+                brand: "MANGO",
+                name: "Jersei de punt",
+                price: "25 €",
+                size: "M",
+                status: "Molt bon estat",
+                image: "imatges/jersei-mango.jpg",
+                description: "Jersei de punt de Mango en molt bon estat. Una peça còmoda, suau i fàcil de combinar."
+            },
+
+            home6: {
+                brand: "H&M",
+                name: "Polo negre",
+                price: "18 €",
+                size: "M",
+                status: "Molt bon estat",
+                image: "imatges/polo-hm.jpg",
+                description: "Polo negre d'H&M en molt bon estat. Un bàsic senzill i versàtil per al dia a dia."
+            }
+
+        };
+
+
+        /* =========================
+           AGAFEM EL PRODUCTE DE LA URL
+        ========================= */
+
+        const params = new URLSearchParams(window.location.search);
+
+        const producteId = params.get("producte");
+
+        const producte = productes[producteId];
+
+
+        /* =========================
+           MOSTREM LA INFORMACIÓ
+        ========================= */
+
+        if (producte) {
+
+            document.title = "REWEAR | " + producte.name;
+
+            document.getElementById("product-brand").textContent =
+                producte.brand;
+
+            document.getElementById("product-name").textContent =
+                producte.name;
+
+            document.getElementById("product-price").textContent =
+                producte.price;
+
+            document.getElementById("product-size").textContent =
+                producte.size;
+
+            document.getElementById("product-status").textContent =
+                producte.status;
+
+            document.getElementById("product-condition").textContent =
+                producte.status;
+
+            document.getElementById("product-description").textContent =
+                producte.description;
+
+            document.getElementById("product-image").style.backgroundImage =
+                "url('" + producte.image + "')";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

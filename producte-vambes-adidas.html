@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>REWEAR | Vambes clàssiques</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">REWEAR</a>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Inici</a>
+            <a href="dona.html">Dona</a>
+            <a href="home.html">Homes</a>
+            <a href="accessoris.html">Accessoris</a>
+            <a href="sabates.html">Sabates</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="search-button">
+                🔍
+            </button>
+
+            <button class="favorite-button">
+                ♡
+            </button>
+
+            <a href="vendre.html" class="sell-button">
+                Vendre
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- PRODUCTE -->
+    <main>
+
+        <section class="product-detail">
+
+            <!-- IMATGE -->
+            <div class="product-detail-image">
+
+                <div class="product-main-image" id="product-image">
+
+                    <span class="condition" id="product-condition">
+                        Com nou
+                    </span>
+
+                    <button class="product-detail-heart">
+                        ♡
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFORMACIÓ -->
+            <div class="product-detail-info">
+
+                <p class="product-detail-brand" id="product-brand">
+                    ADIDAS
+                </p>
+
+                <h1 id="product-name">
+                    Vambes clàssiques
+                </h1>
+
+                <p class="product-detail-price" id="product-price">
+                    38 €
+                </p>
+
+
+                <div class="product-details-line">
+                    <strong>Talla:</strong>
+                    <span id="product-size">40</span>
+                </div>
+
+                <div class="product-details-line">
+                    <strong>Estat:</strong>
+                    <span id="product-status">Com nou</span>
+                </div>
+
+
+                <div class="product-description">
+
+                    <h3>Descripció</h3>
+
+                    <p id="product-description">
+                        Vambes clàssiques d'Adidas en estat com nou.
+                        Un model còmode i versàtil, perfecte per al dia a dia
+                        i per completar looks casuals i esportius.
+                    </p>
+
+                </div>
+
+
+                <!-- COMPRA -->
+                <div class="purchase-box">
+
+                    <h3>Compra segura amb REWEAR</h3>
+
+                    <p>
+                        Compra aquest producte de manera fàcil i segura
+                        a través de REWEAR.
+                    </p>
+
+                    <button class="buy-button">
+                        Comprar
+                    </button>
+
+                    <button class="favorite-large-button">
+                        ♡ Afegir als favorits
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>REWEAR</h3>
+                <p>Moda de segona mà, més sostenible i accessible.</p>
+            </div>
+
+            <div>
+                <h3>Informació</h3>
+                <a href="#">Sobre REWEAR</a>
+                <a href="#">Com funciona</a>
+                <a href="#">Contacte</a>
+            </div>
+
+            <div>
+                <h3>Ajuda</h3>
+                <a href="#">Preguntes freqüents</a>
+                <a href="#">Seguretat</a>
+                <a href="#">Privacitat</a>
+            </div>
+
+        </div>
+
+        <p class="footer-bottom">
+            © 2026 REWEAR
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+    <script>
+
+        const producte = {
+
+            brand: "ADIDAS",
+
+            name: "Vambes clàssiques",
+
+            price: "38 €",
+
+            size: "40",
+
+            status: "Com nou",
+
+            image: "imatges/sabatilla-adidas.jpg",
+
+            description:
+                "Vambes clàssiques d'Adidas en estat com nou. Un model còmode i versàtil, perfecte per al dia a dia i per completar looks casuals i esportius."
+
+        };
+
+
+        document.getElementById("product-brand").textContent =
+            producte.brand;
+
+        document.getElementById("product-name").textContent =
+            producte.name;
+
+        document.getElementById("product-price").textContent =
+            producte.price;
+
+        document.getElementById("product-size").textContent =
+            producte.size;
+
+        document.getElementById("product-status").textContent =
+            producte.status;
+
+        document.getElementById("product-condition").textContent =
+            producte.status;
+
+        document.getElementById("product-description").textContent =
+            producte.description;
+
+        document.getElementById("product-image").style.backgroundImage =
+            "url('" + producte.image + "')";
+
+    </script>
+
+</body>
+
+</html>

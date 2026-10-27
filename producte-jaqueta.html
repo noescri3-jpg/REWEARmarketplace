@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>REWEAR | Jaqueta vintage</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================
+     CAPÇALERA
+========================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        REWEAR
+    </a>
+
+    <nav class="menu">
+        <a href="index.html">Inici</a>
+        <a href="dona.html">Dona</a>
+        <a href="home.html">Home</a>
+        <a href="accessoris.html">Accessoris</a>
+        <a href="sabates.html">Sabates</a>
+    </nav>
+
+    <div class="nav-actions">
+
+        <button class="search-button">
+            ⌕
+        </button>
+
+        <button class="favorite-button">
+            ♡
+        </button>
+
+        <a href="vendre.html" class="sell-button">
+            Vendre
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     PRODUCTE
+========================= -->
+
+<main>
+
+    <section class="product-detail">
+
+        <!-- IMATGE DEL PRODUCTE -->
+
+        <div class="product-detail-image">
+
+            <div class="product-main-image" id="product-image">
+
+                <span class="condition" id="product-condition">
+                    Com nou
+                </span>
+
+                <button class="product-detail-heart" type="button">
+                    ♡
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- INFORMACIÓ DEL PRODUCTE -->
+
+        <div class="product-detail-info">
+
+            <p class="product-detail-brand" id="product-brand">
+                ADIDAS
+            </p>
+
+            <h1 id="product-name">
+                Jaqueta vintage
+            </h1>
+
+            <p class="product-detail-price" id="product-price">
+                30 €
+            </p>
+
+
+            <div class="product-details-line">
+
+                <span>
+                    Talla
+                </span>
+
+                <strong id="product-size">
+                    M
+                </strong>
+
+            </div>
+
+
+            <div class="product-details-line">
+
+                <span>
+                    Estat
+                </span>
+
+                <strong id="product-status">
+                    Com nou
+                </strong>
+
+            </div>
+
+
+            <!-- DESCRIPCIÓ -->
+
+            <div class="product-description">
+
+                <h3>
+                    Descripció
+                </h3>
+
+                <p id="product-description">
+                    Jaqueta vintage d'Adidas en estat com nou.
+                    Una peça esportiva i versàtil, perfecta
+                    per completar diferents looks.
+                </p>
+
+            </div>
+
+
+            <!-- COMPRA -->
+
+            <div class="purchase-box">
+
+                <p>
+                    Compra segura amb REWEAR
+                </p>
+
+                <span>
+                    Compra i ven de manera senzilla i segura
+                    a través de la nostra plataforma.
+                </span>
+
+                <button class="buy-button" type="button">
+                    Comprar ara
+                </button>
+
+                <button class="favorite-large-button" type="button">
+                    ♡ Afegir als favorits
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     PEU DE PÀGINA
+========================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        REWEAR
+    </div>
+
+    <p>
+        © 2026 REWEAR · Marketplace de segona mà
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+<!-- =========================
+     INFORMACIÓ DEL PRODUCTE
+========================= -->
+
+<script>
+
+    const producte = {
+
+        brand: "ADIDAS",
+
+        name: "Jaqueta vintage",
+
+        price: "30 €",
+
+        size: "M",
+
+        status: "Com nou",
+
+        image: "imatges/jaqueta-adidas.jpg",
+
+        description: "Jaqueta vintage d'Adidas en estat com nou. Una peça esportiva i versàtil, perfecta per completar diferents looks."
+
+    };
+
+
+    /* =========================
+       MOSTREM LA INFORMACIÓ
+    ========================= */
+
+    document.title = "REWEAR | " + producte.name;
+
+
+    document.getElementById("product-brand").textContent =
+        producte.brand;
+
+
+    document.getElementById("product-name").textContent =
+        producte.name;
+
+
+    document.getElementById("product-price").textContent =
+        producte.price;
+
+
+    document.getElementById("product-size").textContent =
+        producte.size;
+
+
+    document.getElementById("product-status").textContent =
+        producte.status;
+
+
+    document.getElementById("product-condition").textContent =
+        producte.status;
+
+
+    document.getElementById("product-description").textContent =
+        producte.description;
+
+
+    document.getElementById("product-image").style.backgroundImage =
+        "url('" + producte.image + "')";
+
+</script>
+```
+
+</body>
+
+</html>

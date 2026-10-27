@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandàlies de pell - MANGO | REWEAR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">REWEAR</div>
+
+```
+<nav class="menu">
+    <a href="index.html">Inici</a>
+    <a href="dona.html">Dona</a>
+    <a href="home.html">Home</a>
+    <a href="accessoris.html">Accessoris</a>
+    <a href="sabates.html">Sabates</a>
+</nav>
+
+<div class="nav-actions">
+    <button class="search-button">⌕</button>
+    <button class="favorite-button">♡</button>
+    <a href="vendre.html" class="sell-button">Vendre</a>
+</div>
+```
+
+</header>
+
+<main>
+
+```
+<section class="product-detail">
+
+    <div class="product-detail-image">
+
+        <div class="product-main-image"
+             id="product-image">
+
+            <span class="condition" id="product-condition">
+                Molt bon estat
+            </span>
+
+            <button class="product-heart">♡</button>
+
+        </div>
+
+    </div>
+
+
+    <div class="product-detail-info">
+
+        <div class="product-detail-brand" id="product-brand">
+            MANGO
+        </div>
+
+        <h1 id="product-name">
+            Sandàlies de pell
+        </h1>
+
+        <div class="product-detail-price" id="product-price">
+            29 €
+        </div>
+
+        <div class="product-details-line">
+            <span>Talla 38</span>
+            <span>·</span>
+            <span>Molt bon estat</span>
+        </div>
+
+        <p class="product-description">
+            Sandàlies de pell de Mango en molt bon estat.
+            Un model còmode i elegant, perfecte per als looks
+            de primavera i estiu.
+        </p>
+
+        <div class="purchase-box">
+            <button class="purchase-button">
+                Comprar
+            </button>
+        </div>
+
+    </div>
+
+</section>
+```
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <strong>REWEAR</strong>
+            <p>Moda de segona mà, una nova oportunitat.</p>
+        </div>
+
+```
+    <div>
+        <strong>Ajuda</strong>
+        <p>Contacte</p>
+        <p>Preguntes freqüents</p>
+    </div>
+
+    <div>
+        <strong>REWEAR</strong>
+        <p>Compra i ven moda de manera fàcil i segura.</p>
+    </div>
+</div>
+```
+
+</footer>
+
+<script>
+
+const producte = {
+    brand: "MANGO",
+    name: "Sandàlies de pell",
+    price: "29 €",
+    size: "38",
+    status: "Molt bon estat",
+    image: "imatges/sandalia-mango.jpg",
+    description: "Sandàlies de pell de Mango en molt bon estat. Un model còmode i elegant, perfecte per als looks de primavera i estiu."
+};
+
+document.getElementById("product-brand").textContent = producte.brand;
+document.getElementById("product-name").textContent = producte.name;
+document.getElementById("product-price").textContent = producte.price;
+document.getElementById("product-condition").textContent = producte.status;
+
+document.getElementById("product-image").style.backgroundImage =
+    `url("${producte.image}")`;
+
+</script>
+
+</body>
+</html>

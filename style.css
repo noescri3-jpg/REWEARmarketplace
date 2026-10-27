@@ -1,0 +1,1988 @@
+/* =====================================================
+   REWEAR
+   ESTILS GENERALS
+===================================================== */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html {
+    scroll-behavior: smooth;
+}
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #f8f7f4;
+    line-height: 1.4;
+}
+ 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ 
+button {
+    font-family: inherit;
+}
+ 
+ 
+/* =====================================================
+   CAPÇALERA
+===================================================== */
+ 
+.navbar {
+    height: 94px;
+    background: #fff;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+    padding: 0 6%;
+ 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+ 
+    border-bottom: 1px solid #eeeeee;
+}
+ 
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    white-space: nowrap;
+}
+ 
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-left: auto;
+    margin-right: 55px;
+}
+ 
+.menu a {
+    font-size: 17px;
+    transition: opacity 0.2s ease;
+}
+ 
+.menu a:hover {
+    opacity: 0.5;
+}
+ 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+ 
+.search-button,
+.favorite-button {
+    border: none;
+    background: transparent;
+ 
+    font-size: 29px;
+    line-height: 1;
+ 
+    cursor: pointer;
+ 
+    padding: 5px;
+}
+ 
+.sell-button {
+    background: #222;
+    color: #fff;
+ 
+    border: none;
+    border-radius: 30px;
+ 
+    padding: 14px 27px;
+ 
+    font-size: 16px;
+ 
+    cursor: pointer;
+ 
+    transition: opacity 0.2s ease;
+}
+ 
+.sell-button:hover {
+    opacity: 0.8;
+}
+ 
+ 
+/* =====================================================
+   PORTADA
+===================================================== */
+ 
+.hero {
+    min-height: 720px;
+ 
+    display: flex;
+    align-items: center;
+ 
+    padding: 80px 7%;
+ 
+    position: relative;
+ 
+    background:
+        linear-gradient(
+            90deg,
+            rgba(248,247,244,0.98) 0%,
+            rgba(248,247,244,0.92) 35%,
+            rgba(248,247,244,0.35) 60%,
+            rgba(248,247,244,0.05) 100%
+        ),
+        url("https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=2000&q=80");
+ 
+    background-size: cover;
+    background-position: center;
+}
+ 
+.hero-content {
+    width: 100%;
+    max-width: 650px;
+}
+ 
+.small-title {
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 28px;
+}
+ 
+.hero h1 {
+    font-size: clamp(58px, 6vw, 88px);
+    line-height: 0.96;
+    letter-spacing: -4px;
+ 
+    margin-bottom: 35px;
+}
+ 
+.hero-text {
+    max-width: 570px;
+ 
+    font-size: 21px;
+    line-height: 1.5;
+ 
+    margin-bottom: 34px;
+}
+ 
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+ 
+.button {
+    display: inline-block;
+ 
+    padding: 16px 29px;
+ 
+    border-radius: 35px;
+ 
+    font-size: 17px;
+}
+ 
+.button-dark {
+    background: #222;
+    color: #fff;
+}
+ 
+.button-light {
+    background: transparent;
+    border: 1px solid #222;
+}
+ 
+ 
+/* =====================================================
+   CATEGORIES
+===================================================== */
+ 
+.categories {
+    background: #f8f7f4;
+ 
+    padding: 85px 6%;
+}
+ 
+.section-title {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+ 
+.section-title p {
+    letter-spacing: 5px;
+    font-size: 14px;
+ 
+    margin-bottom: 12px;
+}
+ 
+.section-title h2 {
+    font-size: 48px;
+    letter-spacing: -2px;
+ 
+    margin-bottom: 48px;
+}
+ 
+.category-grid {
+    width: 100%;
+    max-width: 1400px;
+ 
+    margin: 0 auto;
+ 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+ 
+    gap: 25px;
+}
+ 
+.category-card {
+    display: block;
+}
+ 
+.category-image {
+    width: 100%;
+    height: 330px;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    font-size: 100px;
+ 
+    margin-bottom: 18px;
+}
+ 
+.category-roba .category-image {
+    background: #e8dfd1;
+}
+ 
+.category-sabates .category-image {
+    background: #dce3e3;
+}
+ 
+.category-accessoris .category-image {
+    background: #e6d8d1;
+}
+ 
+.category-vintage .category-image {
+    background: #dfded2;
+}
+ 
+.category-card h3 {
+    font-size: 23px;
+    margin-bottom: 6px;
+}
+ 
+.category-card p {
+    font-size: 16px;
+    color: #777;
+}
+ 
+ 
+/* =====================================================
+   PRODUCTES
+===================================================== */
+ 
+.products {
+    background: #fff;
+ 
+    padding: 85px 6%;
+}
+ 
+.products-header {
+    width: 100%;
+    max-width: 1400px;
+ 
+    margin: 0 auto;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+ 
+.products-header p {
+    letter-spacing: 5px;
+    font-size: 14px;
+ 
+    margin-bottom: 12px;
+}
+ 
+.products-header h2 {
+    font-size: 48px;
+    letter-spacing: -2px;
+ 
+    margin-bottom: 48px;
+}
+ 
+.products-header a {
+    font-size: 17px;
+    margin-bottom: 52px;
+}
+ 
+.product-grid {
+    width: 100%;
+    max-width: 1400px;
+ 
+    margin: 0 auto;
+ 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+ 
+    gap: 25px;
+}
+ 
+.product-card {
+    min-width: 0;
+}
+ 
+.product-image {
+    width: 100%;
+    height: 500px;
+ 
+    position: relative;
+ 
+    background-size: cover;
+    background-position: center;
+ 
+    margin-bottom: 19px;
+}
+ 
+ 
+/* =====================================================
+   IMATGES DELS PRODUCTES - DONA
+===================================================== */
+
+.image-1 {
+    background-image: url("imatges/vestit-negre-zara.jpg");
+}
+
+.image-2 {
+    background-image: url("imatges/dessuadora-nike.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-3 {
+    background-image: url("imatges/jeans-levis.jpg");
+}
+
+
+.image-4 {
+    background-image: url("imatges/jaqueta-adidas.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e8e8e8;
+}
+
+
+.image-5 {
+    background-image: url("imatges/abric-mango.jpg");
+}
+
+.image-6 {
+    background-image: url("imatges/jersei-hm.jpg");
+}
+
+
+/* =====================================================
+   IMATGES DELS PRODUCTES - HOME
+===================================================== */
+
+.home-image-1 {
+    background-image: url("imatges/polo-ralph-lauren.jpg");
+}
+
+.home-image-2 {
+    background-image: url("imatges/pantalons-nike.jpg");
+}
+
+.home-image-3 {
+    background-image: url("imatges/jaqueta-levis.jpg");
+}
+
+.home-image-4 {
+    background-image: url("imatges/dessuadora-adidas.jpg");
+}
+
+.home-image-5 {
+    background-image: url("imatges/jersei-mango.jpg");
+}
+
+.home-image-6 {
+    background-image: url("imatges/polo-hm.jpg");
+}
+ 
+/* =====================================================
+   IMATGES DELS PRODUCTES - ACCESSORIS
+===================================================== */
+
+.accessori-image-1 {
+    background-image: url("imatges/bossa-mango.jpg");
+}
+
+.accessori-image-2 {
+    background-image: url("imatges/ulleres-rayban.jpg");
+}
+
+.accessori-image-3 {
+    background-image: url("imatges/cinturo-zara.jpg");
+}
+
+.accessori-image-4 {
+    background-image: url("imatges/rellotge-casio.jpg");
+}
+
+.accessori-image-5 {
+    background-image: url("imatges/gorra-nike.jpg");
+}
+
+.accessori-image-6 {
+    background-image: url("imatges/bufanda-lacoste.jpg");
+}
+
+/* =====================================================
+   IMATGES DELS PRODUCTES - SABATES
+===================================================== */
+
+
+.sabata-image-1 {
+    background-image: url("imatges/vambes-nike.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.sabata-image-2 {
+    background-image: url("imatges/sabatilla-adidas.jpg");
+}
+
+.sabata-image-3 {
+    background-image: url("imatges/bota-dr-martens.jpg");
+}
+
+.sabata-image-4 {
+    background-image: url("imatges/mocassins-zara.jpg");
+}
+
+.sabata-image-5 {
+    background-image: url("imatges/vambes-new-balance.jpg");
+}
+
+.sabata-image-6 {
+    background-image: url("imatges/sandalia-mango.jpg");
+}
+ 
+/* =====================================================
+   INFORMACIÓ DEL PRODUCTE
+===================================================== */
+ 
+.condition {
+    position: absolute;
+ 
+    top: 18px;
+    left: 18px;
+ 
+    background: #fff;
+ 
+    padding: 9px 13px;
+ 
+    font-size: 13px;
+}
+ 
+.heart {
+    position: absolute;
+ 
+    top: 16px;
+    right: 16px;
+ 
+    width: 48px;
+    height: 48px;
+ 
+    border: none;
+    border-radius: 50%;
+ 
+    background: #fff;
+ 
+    font-size: 27px;
+ 
+    cursor: pointer;
+}
+ 
+.heart.active {
+    color: #222;
+}
+ 
+.brand {
+    letter-spacing: 4px;
+    font-size: 13px;
+ 
+    margin-bottom: 7px;
+}
+ 
+.product-card h3 {
+    font-size: 20px;
+    font-weight: 500;
+ 
+    margin-bottom: 10px;
+}
+ 
+.product-info {
+    display: flex;
+    justify-content: space-between;
+ 
+    font-size: 16px;
+    color: #777;
+}
+ 
+.product-info strong {
+    color: #222;
+}
+ 
+ 
+/* =====================================================
+   VERIFICACIÓ / COM FUNCIONA
+===================================================== */
+ 
+.verification {
+    width: 100%;
+ 
+    background: #f8f7f4;
+ 
+    padding: 100px 6%;
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+    gap: 90px;
+}
+ 
+.verification-intro {
+    max-width: 650px;
+ 
+    margin-left: auto;
+}
+ 
+.verification-intro > p {
+    letter-spacing: 5px;
+    font-size: 14px;
+ 
+    margin-bottom: 12px;
+}
+ 
+.verification-intro h2 {
+    font-size: 54px;
+ 
+    line-height: 1.05;
+ 
+    letter-spacing: -2px;
+ 
+    margin-bottom: 30px;
+}
+ 
+.verification-text {
+    max-width: 560px;
+ 
+    font-size: 20px;
+    line-height: 1.5;
+ 
+    color: #707070;
+}
+ 
+.steps {
+    max-width: 650px;
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+    gap: 48px 45px;
+ 
+    margin-right: auto;
+}
+ 
+.step {
+    border-top: 1px solid #ccc;
+ 
+    padding-top: 20px;
+}
+ 
+.step span {
+    color: #888;
+    font-size: 13px;
+}
+ 
+.step h3 {
+    font-size: 23px;
+ 
+    margin: 22px 0 10px;
+}
+ 
+.step p {
+    color: #777;
+ 
+    font-size: 16px;
+    line-height: 1.5;
+}
+ 
+ 
+/* =====================================================
+   SECCIÓ FINAL
+===================================================== */
+ 
+.final-section {
+    min-height: 520px;
+ 
+    background: #f8f7f4;
+ 
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+    justify-content: center;
+ 
+    text-align: center;
+ 
+    padding: 80px 20px;
+}
+ 
+.final-section h2 {
+    max-width: 900px;
+ 
+    font-size: 68px;
+ 
+    line-height: 1;
+ 
+    letter-spacing: -4px;
+ 
+    margin-bottom: 28px;
+}
+ 
+.final-section p {
+    color: #777;
+ 
+    font-size: 19px;
+ 
+    margin-bottom: 32px;
+}
+ 
+ 
+/* =====================================================
+   FOOTER
+===================================================== */
+ 
+footer {
+    min-height: 150px;
+ 
+    background: #222;
+    color: #fff;
+ 
+    padding: 45px 6%;
+ 
+    display: flex;
+ 
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.footer-logo {
+    font-size: 29px;
+ 
+    font-weight: 800;
+ 
+    letter-spacing: 4px;
+}
+ 
+footer p {
+    color: #aaa;
+    font-size: 14px;
+}
+ 
+ 
+/* =====================================================
+   BUSCADOR
+   NO TOQUEM EL SEU FUNCIONAMENT
+===================================================== */
+ 
+.search-overlay {
+    position: fixed;
+ 
+    inset: 0;
+ 
+    background: rgba(0, 0, 0, 0.45);
+ 
+    display: flex;
+ 
+    justify-content: center;
+    align-items: flex-start;
+ 
+    padding-top: 130px;
+ 
+    z-index: 9999;
+}
+ 
+.search-window {
+    width: min(650px, 90%);
+ 
+    background: #fff;
+ 
+    padding: 45px;
+ 
+    position: relative;
+ 
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+ 
+.search-window > p {
+    font-size: 13px;
+ 
+    letter-spacing: 5px;
+ 
+    margin-bottom: 15px;
+}
+ 
+.search-window h2 {
+    font-size: 38px;
+ 
+    letter-spacing: -1px;
+ 
+    margin-bottom: 30px;
+}
+ 
+.close-search {
+    position: absolute;
+ 
+    top: 20px;
+    right: 25px;
+ 
+    border: none;
+ 
+    background: none;
+ 
+    font-size: 35px;
+ 
+    cursor: pointer;
+ 
+    color: #222;
+}
+ 
+.search-input-container {
+    display: flex;
+ 
+    gap: 10px;
+}
+ 
+.search-input-container input {
+    flex: 1;
+ 
+    padding: 17px 20px;
+ 
+    border: 1px solid #222;
+ 
+    font-size: 16px;
+ 
+    outline: none;
+}
+ 
+.search-input-container input:focus {
+    border: 2px solid #222;
+}
+ 
+.search-input-container button {
+    background: #222;
+ 
+    color: #fff;
+ 
+    border: none;
+ 
+    padding: 0 28px;
+ 
+    font-size: 16px;
+ 
+    cursor: pointer;
+ 
+    border-radius: 30px;
+}
+ 
+.search-input-container button:hover {
+    opacity: 0.8;
+}
+ 
+ 
+/* =====================================================
+   PÀGINA DE PRODUCTE
+===================================================== */
+ 
+.product-detail {
+    width: 100%;
+    max-width: 1400px;
+ 
+    margin: 0 auto;
+ 
+    padding: 90px 6%;
+ 
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+ 
+    gap: 80px;
+ 
+    align-items: start;
+}
+ 
+.product-main-image {
+    width: 100%;
+    height: 650px;
+ 
+    position: relative;
+ 
+    background-size: cover;
+    background-position: center;
+}
+ 
+.product-detail-info {
+    padding-top: 20px;
+}
+ 
+.product-detail-brand {
+    font-size: 14px;
+ 
+    letter-spacing: 5px;
+ 
+    margin-bottom: 14px;
+}
+ 
+.product-detail-info h1 {
+    font-size: 55px;
+ 
+    line-height: 1;
+ 
+    letter-spacing: -3px;
+ 
+    margin-bottom: 22px;
+}
+ 
+.product-detail-price {
+    font-size: 27px;
+ 
+    margin-bottom: 35px;
+}
+ 
+.product-details-line {
+    display: flex;
+    justify-content: space-between;
+ 
+    border-top: 1px solid #ddd;
+ 
+    padding: 18px 0;
+ 
+    font-size: 16px;
+}
+ 
+.product-description {
+    border-top: 1px solid #ddd;
+ 
+    padding-top: 25px;
+ 
+    margin-top: 15px;
+}
+ 
+.product-description h3 {
+    font-size: 22px;
+ 
+    margin-bottom: 12px;
+}
+ 
+.product-description p {
+    color: #777;
+ 
+    font-size: 17px;
+ 
+    line-height: 1.6;
+}
+ 
+.purchase-box {
+    background: #f8f7f4;
+ 
+    padding: 30px;
+ 
+    margin-top: 35px;
+}
+ 
+.purchase-box p {
+    font-size: 18px;
+ 
+    font-weight: 600;
+ 
+    margin-bottom: 8px;
+}
+ 
+.purchase-box span {
+    display: block;
+ 
+    color: #777;
+ 
+    line-height: 1.5;
+ 
+    margin-bottom: 22px;
+}
+ 
+.buy-button,
+.favorite-large-button {
+    width: 100%;
+ 
+    border: none;
+ 
+    padding: 16px;
+ 
+    border-radius: 30px;
+ 
+    font-size: 16px;
+ 
+    cursor: pointer;
+ 
+    margin-top: 10px;
+}
+ 
+.buy-button {
+    background: #222;
+ 
+    color: #fff;
+}
+ 
+.favorite-large-button {
+    background: #fff;
+ 
+    border: 1px solid #222;
+}
+ 
+ 
+/* =====================================================
+   PÀGINA DE VENDRE
+===================================================== */
+ 
+.sell-section {
+    width: 100%;
+    max-width: 900px;
+ 
+    margin: 0 auto;
+ 
+    padding: 90px 6% 120px;
+}
+ 
+.sell-intro {
+    margin-bottom: 55px;
+}
+ 
+.sell-intro h1 {
+    font-size: clamp(48px, 5vw, 64px);
+    line-height: 1;
+    letter-spacing: -3px;
+ 
+    margin-bottom: 22px;
+}
+ 
+.sell-text {
+    max-width: 520px;
+ 
+    font-size: 18px;
+    line-height: 1.5;
+ 
+    color: #707070;
+}
+ 
+.sell-form {
+    display: flex;
+    flex-direction: column;
+ 
+    gap: 28px;
+}
+ 
+.sell-photo-upload {
+    width: 100%;
+}
+ 
+.photo-label {
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+    justify-content: center;
+ 
+    gap: 10px;
+ 
+    width: 100%;
+    height: 220px;
+ 
+    background: #f8f7f4;
+    border: 1px dashed #bbb;
+ 
+    cursor: pointer;
+ 
+    color: #777;
+ 
+    font-size: 15px;
+ 
+    transition: opacity 0.2s ease;
+}
+ 
+.photo-label:hover {
+    opacity: 0.7;
+}
+ 
+.photo-icon {
+    font-size: 32px;
+    color: #222;
+}
+ 
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+    gap: 22px;
+}
+ 
+.form-field {
+    display: flex;
+    flex-direction: column;
+ 
+    gap: 8px;
+}
+ 
+.form-field-full {
+    width: 100%;
+}
+ 
+.form-field label {
+    font-size: 14px;
+    letter-spacing: 1px;
+ 
+    color: #555;
+}
+ 
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+ 
+    padding: 14px 16px;
+ 
+    border: 1px solid #ccc;
+ 
+    font-size: 16px;
+    font-family: inherit;
+ 
+    background: #fff;
+ 
+    outline: none;
+ 
+    transition: border 0.2s ease;
+}
+ 
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border: 1px solid #222;
+}
+ 
+.form-field textarea {
+    resize: vertical;
+}
+ 
+.sell-submit {
+    align-self: flex-start;
+ 
+    border: none;
+ 
+    cursor: pointer;
+ 
+    margin-top: 10px;
+}
+ 
+ 
+/* =====================================================
+   PÀGINES DE CATEGORIA
+===================================================== */
+ 
+.category-page {
+    width: 100%;
+ 
+    background: #fff;
+ 
+    padding: 85px 6%;
+}
+ 
+.category-page-header {
+    width: 100%;
+    max-width: 1400px;
+ 
+    margin: 0 auto 35px;
+ 
+    text-align: center;
+}
+ 
+.category-page-header > p {
+    letter-spacing: 5px;
+    font-size: 14px;
+ 
+    margin-bottom: 12px;
+}
+ 
+.category-page-header h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+ 
+    margin-bottom: 18px;
+}
+ 
+.category-description {
+    font-size: 18px;
+    color: #777;
+ 
+    max-width: 560px;
+ 
+    margin: 0 auto;
+}
+ 
+.filters {
+    width: 100%;
+    max-width: 1400px;
+ 
+    margin: 0 auto 50px;
+ 
+    display: flex;
+    flex-wrap: wrap;
+ 
+    gap: 12px;
+}
+ 
+.filter {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+ 
+    padding: 11px 22px;
+ 
+    font-size: 15px;
+    font-family: inherit;
+ 
+    cursor: pointer;
+ 
+    transition: all 0.2s ease;
+}
+ 
+.filter:hover {
+    border-color: #222;
+}
+ 
+.filter.active {
+    background: #222;
+    border-color: #222;
+    color: #fff;
+}
+ 
+.category-products {
+    width: 100%;
+    max-width: 1400px;
+ 
+    margin: 0 auto;
+ 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+ 
+    gap: 25px;
+}
+ 
+ 
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+ 
+@media (max-width: 1100px) {
+ 
+    .menu {
+        gap: 22px;
+        margin-right: 25px;
+    }
+ 
+    .navbar {
+        padding: 0 4%;
+    }
+ 
+    .category-grid,
+    .product-grid {
+        gap: 18px;
+    }
+ 
+    .category-image {
+        height: 290px;
+    }
+ 
+    .product-image {
+        height: 430px;
+    }
+ 
+    .verification {
+        gap: 50px;
+    }
+ 
+    .verification-intro h2 {
+        font-size: 45px;
+    }
+ 
+    .final-section h2 {
+        font-size: 58px;
+    }
+ 
+    .form-grid {
+        gap: 16px;
+    }
+ 
+    .category-products {
+        gap: 18px;
+    }
+}
+ 
+ 
+/* =====================================================
+   RESPONSIVE - MÒBIL
+===================================================== */
+ 
+@media (max-width: 900px) {
+ 
+    .navbar {
+        height: 80px;
+ 
+        padding: 0 5%;
+    }
+ 
+    .logo {
+        font-size: 27px;
+    }
+ 
+    .menu {
+        display: none;
+    }
+ 
+    .nav-actions {
+        gap: 8px;
+    }
+ 
+    .sell-button {
+        padding: 11px 19px;
+        font-size: 14px;
+    }
+ 
+    .hero {
+        min-height: 650px;
+ 
+        padding: 60px 7%;
+    }
+ 
+    .hero h1 {
+        font-size: 60px;
+    }
+ 
+    .hero-text {
+        font-size: 19px;
+    }
+ 
+    .categories,
+    .products {
+        padding: 70px 6%;
+    }
+ 
+    .category-grid,
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    .category-image {
+        height: 300px;
+    }
+ 
+    .product-image {
+        height: 450px;
+    }
+ 
+    .verification {
+        grid-template-columns: 1fr;
+ 
+        padding: 80px 7%;
+    }
+ 
+    .verification-intro,
+    .steps {
+        max-width: 100%;
+        margin: 0;
+    }
+ 
+    .final-section h2 {
+        font-size: 52px;
+    }
+ 
+    .product-detail {
+        grid-template-columns: 1fr;
+ 
+        padding: 60px 6%;
+ 
+        gap: 45px;
+    }
+ 
+    .product-main-image {
+        height: 600px;
+    }
+ 
+    .category-page {
+        padding: 70px 6%;
+    }
+ 
+    .category-page-header h1 {
+        font-size: 40px;
+    }
+ 
+    .category-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+ 
+/* =====================================================
+   RESPONSIVE - MÒBIL PETIT
+===================================================== */
+ 
+@media (max-width: 600px) {
+ 
+    .navbar {
+        padding: 0 4%;
+    }
+ 
+    .logo {
+        font-size: 23px;
+ 
+        letter-spacing: 3px;
+    }
+ 
+    .search-button,
+    .favorite-button {
+        font-size: 25px;
+    }
+ 
+    .sell-button {
+        padding: 10px 15px;
+    }
+ 
+    .hero {
+        min-height: 600px;
+ 
+        padding: 55px 7%;
+    }
+ 
+    .small-title {
+        font-size: 13px;
+ 
+        letter-spacing: 4px;
+    }
+ 
+    .hero h1 {
+        font-size: 50px;
+ 
+        letter-spacing: -3px;
+    }
+ 
+    .hero-text {
+        font-size: 18px;
+    }
+ 
+    .hero-buttons {
+        flex-direction: column;
+ 
+        align-items: flex-start;
+    }
+ 
+    .button {
+        padding: 15px 25px;
+    }
+ 
+    .categories,
+    .products {
+        padding: 65px 6%;
+    }
+ 
+    .section-title h2,
+    .products-header h2 {
+        font-size: 38px;
+ 
+        margin-bottom: 35px;
+    }
+ 
+    .products-header {
+        display: block;
+    }
+ 
+    .products-header a {
+        display: inline-block;
+ 
+        margin-bottom: 35px;
+    }
+ 
+    .category-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .category-image {
+        height: 360px;
+    }
+ 
+    .product-image {
+        height: 480px;
+    }
+ 
+    .steps {
+        grid-template-columns: 1fr;
+    }
+ 
+    .verification {
+        padding: 70px 7%;
+    }
+ 
+    .verification-intro h2 {
+        font-size: 42px;
+    }
+ 
+    .verification-text {
+        font-size: 18px;
+    }
+ 
+    .final-section {
+        min-height: 450px;
+ 
+        padding: 70px 25px;
+    }
+ 
+    .final-section h2 {
+        font-size: 43px;
+ 
+        letter-spacing: -2px;
+    }
+ 
+    .final-section p {
+        font-size: 17px;
+    }
+ 
+    footer {
+        flex-direction: column;
+ 
+        align-items: flex-start;
+ 
+        gap: 20px;
+ 
+        padding: 40px 7%;
+    }
+ 
+    .product-detail {
+        padding: 45px 6%;
+    }
+ 
+    .product-main-image {
+        height: 500px;
+    }
+ 
+    .product-detail-info h1 {
+        font-size: 43px;
+    }
+ 
+    .search-window {
+        width: 92%;
+ 
+        padding: 35px 25px;
+    }
+ 
+    .search-window h2 {
+        font-size: 30px;
+    }
+ 
+    .search-input-container {
+        flex-direction: column;
+    }
+ 
+    .search-input-container button {
+        padding: 14px 25px;
+    }
+ 
+    .sell-section {
+        padding: 60px 6% 80px;
+    }
+ 
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .category-page-header h1 {
+        font-size: 34px;
+    }
+ 
+    .filters {
+        gap: 8px;
+    }
+ 
+    .filter {
+        padding: 9px 16px;
+        font-size: 14px;
+    }
+ 
+    .category-products {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================================
+   MODE DE COMPRA CONSCIENT
+===================================================== */
+
+.conscious-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    z-index: 9999;
+}
+
+
+.conscious-window {
+    width: min(650px, 100%);
+
+    background: #fff;
+
+    padding: 45px;
+
+    position: relative;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.20);
+
+    border-radius: 4px;
+}
+
+
+.conscious-window > p:first-child {
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+
+    color: #777;
+}
+
+
+.conscious-window h2 {
+    font-size: 38px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 22px;
+}
+
+
+.conscious-text {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+
+.conscious-question {
+    font-size: 18px;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+
+.conscious-textarea {
+    width: 100%;
+
+    min-height: 120px;
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    background: #f8f7f4;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    resize: vertical;
+
+    outline: none;
+}
+
+
+.conscious-textarea:focus {
+    border: 1px solid #222;
+
+    background: #fff;
+}
+
+
+.conscious-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+.conscious-button {
+    flex: 1;
+
+    border: none;
+
+    padding: 15px 20px;
+
+    border-radius: 30px;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.conscious-button:hover {
+    opacity: 0.8;
+}
+
+
+.conscious-back {
+    background: #fff;
+
+    border: 1px solid #222;
+}
+
+
+.conscious-continue {
+    background: #222;
+
+    color: #fff;
+}
+
+
+/* =====================================================
+   COMPRA CONFIRMADA
+===================================================== */
+
+.confirmation-window {
+    text-align: center;
+}
+
+
+.confirmation-icon {
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: #f8f7f4;
+
+    font-size: 30px;
+}
+
+
+.confirmation-window h2 {
+    margin-bottom: 15px;
+}
+
+
+.confirmation-text {
+    color: #777;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    margin-bottom: 28px;
+}
+
+
+.confirmation-button {
+    display: inline-block;
+
+    background: #222;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   MODE CONSCIENT - MÒBIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .conscious-overlay {
+        padding: 18px;
+    }
+
+
+    .conscious-window {
+        padding: 30px 24px;
+    }
+
+
+    .conscious-window h2 {
+        font-size: 30px;
+    }
+
+
+    .conscious-text,
+    .conscious-question {
+        font-size: 16px;
+    }
+
+
+    .conscious-buttons {
+        flex-direction: column;
+    }
+
+
+    .conscious-button {
+        width: 100%;
+    }
+
+}
+
+/* =====================================================
+   PANTALLA DE PAGAMENT
+===================================================== */
+
+.checkout-window {
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+
+.checkout-window h2 {
+    margin-bottom: 12px;
+}
+
+
+.checkout-description {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.checkout-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+.checkout-field label {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.checkout-field input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ccc;
+
+    background: #fff;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.checkout-field input:focus {
+    border-color: #222;
+}
+
+
+.checkout-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+/* Avís de simulació */
+
+.checkout-note {
+    margin-top: 20px;
+
+    padding: 12px 15px;
+
+    background: #f8f7f4;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+/* Mòbil */
+
+@media (max-width: 600px) {
+
+    .checkout-window {
+        max-height: 92vh;
+    }
+
+    .checkout-row {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =====================================================
+   PREFERITS
+===================================================== */
+
+.favorites-window {
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.favorites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.favorite-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 20px;
+    background: #f8f7f4;
+    border: 1px solid #e5e3df;
+}
+
+.favorite-product-info {
+    flex: 1;
+}
+
+.favorite-product-info .brand {
+    margin: 0 0 5px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #777;
+}
+
+.favorite-product-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.remove-favorite {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease;
+}
+
+.remove-favorite:hover {
+    transform: scale(1.15);
+}
+
+@media (max-width: 600px) {
+
+    .favorite-product {
+        padding: 15px;
+    }
+
+    .favorite-product-info h3 {
+        font-size: 16px;
+    }
+
+}
+
+/* IMATGES EXCLUSIVES DE LA PÀGINA PRINCIPAL */
+
+.image-inici-2 {
+    background-image: url("imatges/vambes-nike.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-inici-4 {
+    background-image: url("imatges/bossa-mango.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e8e8e8;
+}
